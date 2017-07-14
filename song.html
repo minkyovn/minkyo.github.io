@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+        window.onbeforeunload = confirmExit;
+
+        function load() {
+            var snd = new Audio("./sound/ren.mp3");
+            snd.play();
+        }
+
+        function confirmExit() {
+            window.open("song.html", "myWindow", "width=200, height=100");
+        }
+
+        
+    </script>
+</head>
+
+<body onload="load()" beforeunload="confirmExit()">
+    <img src="https://images7.alphacoders.com/519/thumb-1920-519769.jpg" style="width: calc(100vw - 25px); height: calc(100vh - 25px)" alt="">
+</body>
+
+</html>
